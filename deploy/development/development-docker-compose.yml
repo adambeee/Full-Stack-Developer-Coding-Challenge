@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  mongohub:
+    image: mongo:4.0.1-xenial
+    ports: 
+      - 27017:27017
+    volumes:
+      - ./mongodb/dbInit.js:/docker-entrypoint-initdb.d/dbInit.js
+    environment:
+      MONGO_INITDB_DATABASE: grm
