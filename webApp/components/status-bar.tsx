@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 const AppMeta = ({head}) => (
     <div className="app-meta">
-        <h1>GRM</h1>
+        <h1>GRM</h1> <small>Dashboard</small>
     </div>
 );
 

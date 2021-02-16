@@ -2,23 +2,9 @@ import React, { useEffect } from 'react';
 import ServiceMonitor from './service-monitor';
 
 const serviceMonitorData = {
-    elcomp: {
-        icon: 'processor', 
-        label: 'ELCOMP',
-        sublabel: '', 
-        status: 'normal',
-        notifications: ''
-    },
-    udl: {
-        icon: 'equipment', 
-        label: 'UDL',
-        sublabel: '', 
-        status: 'normal',
-        notifications: ''
-    },
-    lamod: {
+    server: {
         icon: 'antenna', 
-        label: 'lamod',
+        label: 'GRM Server',
         sublabel: '', 
         status: 'normal',
         notifications: ''
@@ -29,13 +15,7 @@ export default function StatusIndicators() {
     return (
         <div className="rux-form-field">
             <ul className="status-indicators__indicator">
-                <ServiceMonitor serviceMonitorData={serviceMonitorData.udl}></ServiceMonitor>
-            </ul>
-            <ul className="status-indicators__indicator">
-                <ServiceMonitor serviceMonitorData={serviceMonitorData.elcomp}></ServiceMonitor>
-            </ul>
-            <ul className="status-indicators__indicator">
-                <ServiceMonitor serviceMonitorData={serviceMonitorData.lamod}></ServiceMonitor>
+                <ServiceMonitor serviceMonitorData={serviceMonitorData.server}></ServiceMonitor>
             </ul>
         </div>
     )

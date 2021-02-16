@@ -3,6 +3,7 @@
 declare module JSX {
     interface IntrinsicElements {
       "rux-clock"               : any,
+      "rux-log"                 : any,
       "rux-status"              : any,
       "rux-global-status-bar"   : any,
       "rux-monitoring-icon"     : any
