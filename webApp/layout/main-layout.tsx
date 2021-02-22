@@ -33,6 +33,7 @@ export default function MainLayout({
       <div className="astro-telemetry-pane">
         <div className="grid-zone grid-zone--main">
             <div className="grid-zone grid-zone--main__content">
+              {children}
             </div>
         </div>
       </div>

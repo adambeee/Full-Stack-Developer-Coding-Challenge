@@ -14,5 +14,5 @@ export default function AlertLog() {
           message: "USA-177 experienced solar panel misalignment."
         },
       ];
-    return (<rux-log data="${myLogData}"></rux-log>)
+    return (<rux-log data={myLogData}></rux-log>)
 }
